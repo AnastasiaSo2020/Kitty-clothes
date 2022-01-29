@@ -20,12 +20,12 @@
 
 .tab button:hover {
   background-color: var(--primary-blue-dark);
-  border: 1px solid var(--base-light);
+  border: none;
 }
 
-.tab button.active {
+button:focus {
   background-color: var(--primary-blue-light);
-  border: 1px solid var(--base-light);
+  border: none;
 }
 
 .tabcontent {

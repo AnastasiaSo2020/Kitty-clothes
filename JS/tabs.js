@@ -8,11 +8,7 @@ function openCart(evt, cartState) {
 
     tablinks = document.getElementsByClassName("tablinks");
 
-    for (i = 0; i < tablinks.length; i++) {
-        tabcontent[1].className.replace("active", " ");
-    }
-
     document.getElementById(cartState).style.display = "block";
 
-    evt.currentTarget.className += "active";
+    evt.currentTarget.className;
 }
