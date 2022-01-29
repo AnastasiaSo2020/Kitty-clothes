@@ -1,0 +1,41 @@
+@import url(main.css);
+.navbar-brand {
+  content: auto;
+}
+.navbar {
+  font-weight: bold;
+  font-size: 30px;
+  background: linear-gradient(to top, #ffff 0%, #318fb5 5%, #005086 95%);
+}
+.nav-link {
+  color: #001244 !important;
+}
+.nav-link:hover {
+  color: #f7d6bf !important;
+  text-decoration: none;
+}
+footer {
+  color: #001244;
+  min-height: 5vh;
+  background-color: #318fb5;
+  text-align: center;
+  position: relative;
+}
+.image-responsive {
+  height: auto;
+  width: auto;
+  max-height: 250px;
+  max-width: 650px;
+}
+.nav menu {
+  content: justify, left;
+}
+.d-block {
+  height: auto;
+  width: auto;
+  max-height: 450px;
+  max-width: 250px;
+}
+h2 {
+  color: #001244;
+}
