@@ -7,8 +7,12 @@
   font-size: 30px;
   background: linear-gradient(to top, #ffff 0%, #318fb5 5%, #005086 95%);
 }
-.nav-item {
-  color: plum;
+.nav-link {
+  color: #001244 !important;
+}
+.nav-link:hover {
+  color: #f7d6bf !important;
+  text-decoration: none;
 }
 footer {
   color: #001244;
