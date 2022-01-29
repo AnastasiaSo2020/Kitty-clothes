@@ -3,19 +3,19 @@
   content: auto;
 }
 .navbar {
-  background-color: #318fb5;
   font-weight: bold;
   font-size: 30px;
-  background: linear-gradient(to top, #ffff 0%, #f7d6bf 5%, #318fb5 95%);
+  background: linear-gradient(to top, #ffff 0%, #318fb5 5%, #005086 95%);
 }
-.ul {
+.nav-item {
+  color: plum;
+}
+footer {
   color: #001244;
-}
-.footer {
+  min-height: 5vh;
   background-color: #318fb5;
   text-align: center;
-  content: center;
-  font-family: monospace;
+  position: relative;
 }
 .image-responsive {
   height: auto;
@@ -31,8 +31,4 @@
   width: auto;
   max-height: 450px;
   max-width: 250px;
-}
-.stickFooter {
-  position: fixed;
-  bottom: auto;
 }
