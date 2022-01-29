@@ -22,6 +22,21 @@ p {
   font-size: 1rem;
 }
 
+p a {
+  color: var(--base-dark);
+  text-decoration: none;
+}
+
+p a:hover {
+  color: var(--primary-blue);
+  text-decoration: underline;
+}
+
+p a:active {
+  color: var(--primary-blue-dark);
+  text-decoration: underline;
+}
+
 h1,
 h2,
 h3,
