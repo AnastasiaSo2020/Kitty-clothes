@@ -7,14 +7,59 @@
     <title>Categories</title>
 
     <link href="CSS/Anastasija.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/home.css">
+
     <link rel="icon" type="image/x-icon" href="/IMG/Logo-white-darkblue.png">
 
 </head>
 <body>
-    
+    <div class="container-fluid">
+        <header>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <div class="container">
+                        <a class="navbar-brand">
+                            <img src="\IMG\Logo-transparent-white-copy.png" alt="logo kitty" width="140" height="120">
+                        </a>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="/categories.html" id="navbarDropdown"
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Categories
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Kids</a></li>
+                                    <li><a class="dropdown-item" href="#">Women</a></li>
+                                    <li><a class="dropdown-item" href="#">Men</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="/categories.html">All Categories</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/cart.html">Cart</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </div>
+
     <div class="container">
         <p class="subsequence">
-            <span><a href=...>Home</a> > </span>
+            <span><a href="index.html">Home</a> > </span>
             <span id="lastSubsequenceColor">Categories</span>
         </p>
 
@@ -23,7 +68,7 @@
                 <img src="IMG/t-shirt(women).jpg" class="imgArt">
             </div>
             <div class="col-9 columnPadding">
-                <h5 class="card-title"> <a href="...">WOMEN</a></h5>
+                <h5 class="card-title"> <a href="products-women.html">WOMEN</a></h5>
                 <p class="article-text">Cute cat themed shirts, hoodies, leggings, women’s tops, unisex t-shirts... make awesome gifts. Shop always on-trend kitty cat design apparel, clothing and accessories. The cat lady stereotype, which presents single women who love their cats as unhinged, desexualized, and, in some cases, nearly feral themselves, has persisted for generations. ... But the cat lady stereotype is indeed a lie: A 2019 study found that cat ladies are no more lonely, depressed, or anxious than anyone else.</p>
             </div>
         </div>
@@ -35,7 +80,7 @@
                 <img src="IMG/t-shirt(men).jpg" class="imgArt">
             </div>
             <div class="col-9 columnPadding">
-                <h5 class="card-title"> <a href="...">MEN</a></h5>
+                <h5 class="card-title"> <a href="products-men.html">MEN</a></h5>
                 <p class="article-text">Check out our mens cat shirt selection for the very best in unique or custom, handmade pieces from our clothing shops. There is nothing inherently strange about a man having a cat as there are many reasons for single men to adopt cats. It suggests that he has a caring nature and desire for animal companionship, regardless of its species. </p>
             </div>
         </div>
@@ -47,10 +92,21 @@
                 <img src="IMG/t-shirt(kids).jpg" class="imgArt">
             </div>
             <div class="col-9 columnPadding">
-                <h5 class="card-title"> <a href="...">KIDS</a></h5>
+                <h5 class="card-title"> <a href="products-kids.html">KIDS</a></h5>
                 <p class="article-text">Cats clothing for kids. Girls and boys. See more ideas about cat clothes, cat fashion, kids outfits. Cats and young children can absolutely live safely and happily together if you adopt a cat with the right temperament. The best cats for kids are gentle, friendly and patient. While rumor has it that many cats are cranky, most can make loving pets.</p>
             </div>
         </div>
 
+        <hr>
+
+        <footer>
+            <div class="row" style="font-family: monospace;">
+                <p> <strong> Kitty Clothes </strong> © All rights reserved by Ieva Anastija Arnita ☎ +37126208098
+                    <a href="https://www.instagram.com/arnita_zarina/?hl=en" target="_blank"><i class="fa fa-instagram"
+                            style="font-size:24px; color: plum;"></i></a>
+                </p>
+            </div>
+        </footer>
+        
 </body>
 </html>
