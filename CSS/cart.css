@@ -39,4 +39,9 @@ img {
 
 .row {
   padding: 1rem;
+  border: var(--border);
+}
+
+.table-header {
+  font-weight: bold;
 }
