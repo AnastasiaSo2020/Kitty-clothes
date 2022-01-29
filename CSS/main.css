@@ -37,6 +37,21 @@ p a:active {
   text-decoration: underline;
 }
 
+a {
+  color: var(--base-dark);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--primary-blue);
+  text-decoration: underline;
+}
+
+a:active {
+  color: var(--primary-blue-dark);
+  text-decoration: underline;
+}
+
 h1,
 h2,
 h3,
