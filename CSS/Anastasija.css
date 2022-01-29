@@ -13,3 +13,23 @@
 .columnPadding {
     padding: 20px;
 }
+
+h5 {
+    font-size: 30px;
+}
+
+.image-cats {
+    padding: 20px;
+    width: 150px;
+    height: auto;
+}
+
+.mainImg {
+    padding: 20px;
+    width: 500px;
+    height: auto;
+}
+
+.imageClass {
+    padding: 20px;
+}
