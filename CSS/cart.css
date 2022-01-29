@@ -31,3 +31,12 @@ button:focus {
 .tabcontent {
   display: none;
 }
+
+img {
+  height: 80px;
+  width: auto;
+}
+
+.row {
+  padding: 1rem;
+}
