@@ -1,0 +1,15 @@
+@import url(main.css);
+
+.imgArt {
+    height: 300px;
+    width: 300px;
+}
+
+.flexcolumn {
+    display: flex;
+    flex-direction: row;
+}
+
+.columnPadding {
+    padding: 20px;
+}
