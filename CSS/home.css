@@ -1,15 +1,16 @@
 @import url(main.css);
-.image-responsive {
-  width: 15%;
+.navbar-brand {
+  content: auto;
 }
-.menu {
+.navbar {
   background-color: #318fb5;
   font-weight: bold;
   font-size: 30px;
-  text-decoration: #f7d6bf;
   background: linear-gradient(to top, #ffff 0%, #f7d6bf 5%, #318fb5 95%);
 }
-
+.ul {
+  color: #001244;
+}
 .footer {
   background-color: #318fb5;
   text-align: center;
@@ -25,10 +26,13 @@
 .nav menu {
   content: justify, left;
 }
-
 .d-block {
   height: auto;
   width: auto;
   max-height: 450px;
   max-width: 250px;
+}
+.stickFooter {
+  position: fixed;
+  bottom: auto;
 }
