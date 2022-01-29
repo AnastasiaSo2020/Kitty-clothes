@@ -1,3 +1,32 @@
-h1 {
-    color:brown;
+@import url('href="https://fonts.googleapis.com/css?family=Cabin|Roboto:400,700|Roboto+Condensed:400,700');
+
+* {
+  --primary-blue: #005086;
+  --primary-blue-dark: #001244;
+  --primary-blue-light: #318fb5;
+  --secondary-lightgreen: #b0cac7;
+  --secondary-creme: #f7d6bf;
+  --base-dark: #000;
+  --base-light: #fff;
+  /*if other red tones suit best, change them in this section */
+  --error-dark: #6c0503; /*use for :hover */
+  --error-bright: #d02a2a; /*use for originaly displayed element */
+  /*if other green tones suit best, change them in this section */
+  --valid-dark: #025b0e; /*use for :hover */
+  --valid-bright: #9db802; /*use for originaly displayed element */
+  --border: 1px solid #000;
+}
+
+p {
+  font-family: "Cabin", sans-serif;
+  font-size: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto Condensed", sans-serif;
 }
