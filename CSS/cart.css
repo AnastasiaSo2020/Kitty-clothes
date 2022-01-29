@@ -45,3 +45,9 @@ img {
 .table-header {
   font-weight: bold;
 }
+
+.quantity {
+  display: inline-block;
+}
+
+.quantity;

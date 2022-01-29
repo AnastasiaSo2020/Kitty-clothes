@@ -19,7 +19,6 @@ footer {
   min-height: 5vh;
   background-color: #318fb5;
   text-align: center;
-  position: relative;
 }
 .image-responsive {
   height: auto;
