@@ -1,5 +1,11 @@
 @import url(main.css);
 
+.tab {
+  overflow: hidden;
+  border: var(--border);
+  background-color: var(--primary-blue);
+}
+
 .tab button {
   background-color: var(--primary-blue);
   float: left;
@@ -17,12 +23,11 @@
   border: 1px solid var(--base-light);
 }
 
-.tab button:active {
+.tab button.active {
   background-color: var(--primary-blue-light);
   border: 1px solid var(--base-light);
 }
 
-/*
 .tabcontent {
   display: none;
-}*/
+}
