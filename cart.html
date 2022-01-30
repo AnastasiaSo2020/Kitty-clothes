@@ -79,24 +79,32 @@
                   <div class="col-2 col-sm-2"><img src="/IMG/cat-women-1.jpeg" alt="..."></div>
                   <div class="col-2 col-sm-2">T-shirt</div>
                   <div class="col-2 col-sm-2">
-                      <div class="quantity buttons-add">
-                          <input type="button" value="-" class="minus">
-                          <input type="number" step="1" min="1" max="" name="quantity" value="1" title="Quantity" class="input-text" pattern="" inputmode="">
-                          <input type="button" value="+" class="pluss">
+                      <div class="quantity">
+                          <div class="minus" onclick="decreaseCount(event, this)">-</div>
+                          <input type="none" step="1" min="1" max="" name="quantity" value="1" title="Quantity" class="input-text" pattern="" inputmode="">
+                          <div class="pluss" onclick="increaseCount(event, this)">+</div>
                       </div>
                   </div>
-                  <div class="col-2 col-sm-2">.col-6 .col-sm-1</div>
-                  <div class="col-2 col-sm-2">.col-6 .col-sm-1</div>
-                  <div class="col-2 col-sm-2">.col-6 .col-sm-</div>
+                  <div class="col-2 col-sm-2">5.53 Eur</div>
+                  <div class="col-2 col-sm-2">5.53 Eur</div>
+                  <div class="col-2 col-sm-2">
+                      
+                  </div>
                   </div>
                   <!-- Force next columns to break to new line -->
                   <div class="row text-center">
               
                   <div class="col-2 col-sm-2"><img src="/IMG/cat-women-2.jpg" alt="..."></div>
                   <div class="col-2 col-sm-2">Cat t-shirt</div>
-                  <div class="col-2 col-sm-2">.col-6 .col-sm-3</div>
-                  <div class="col-2 col-sm-2">.col-6 .col-sm-3</div>
-                  <div class="col-2 col-sm-2">.col-6 .col-sm-3</div>
+                  <div class="col-2 col-sm-2">
+                    <div class="quantity">
+                        <div class="minus" onclick="decreaseCount(event, this)">-</div>
+                        <input type="none" step="1" min="1" max="" name="quantity" value="1" title="Quantity" class="input-text" pattern="" inputmode="">
+                        <div class="pluss" onclick="increaseCount(event, this)">+</div>
+                    </div>
+                  </div>
+                  <div class="col-2 col-sm-2">5.53 Eur</div>
+                  <div class="col-2 col-sm-2">5.53 Eur</div>
                   <div class="col-2 col-sm-2">.col-6 .col-sm-3</div>
                   <!-- Force next columns to break to new line -->
                   </div>
@@ -104,9 +112,15 @@
                   <div class="row text-center">
                   <div class="col-2 col-sm-2"><img src="/IMG/t-shirt(men).jpg" alt="..."></div>
                   <div class="col-2 col-sm-2">Two cat t-shirt</div>
-                  <div class="col-2 col-sm-2">.col-6 .col-sm-3</div>
-                  <div class="col-2 col-sm-2">.col-6 .col-sm-3</div>
-                  <div class="col-2 col-sm-2">.col-6 .col-sm-3</div>
+                  <div class="col-2 col-sm-2">
+                    <div class="quantity">
+                        <div class="minus" onclick="decreaseCount(event, this)">-</div>
+                        <input type="none" step="1" min="1" max="" name="quantity" value="1" title="Quantity" class="input-text" pattern="" inputmode="">
+                        <div class="pluss" onclick="increaseCount(event, this)">+</div>
+                    </div>
+                  </div>
+                  <div class="col-2 col-sm-2">5.53 Eur</div>
+                  <div class="col-2 col-sm-2">5.53 Eur</div>
                   <div class="col-2 col-sm-2">.col-6 .col-sm-3</div>
                   </div>
                   <!-- Force next columns to break to new line -->
@@ -114,9 +128,15 @@
               
                   <div class="col-2 col-sm-2"><img src="/IMG/cat-women-5.jpg" alt="..."></div>
                   <div class="col-2 col-sm-2">Yellow cat</div>
-                  <div class="col-2 col-sm-2">.col-6 .col-sm-3</div>
-                  <div class="col-2 col-sm-2">.col-6 .col-sm-3</div>
-                  <div class="col-2 col-sm-2">.col-6 .col-sm-3</div>
+                  <div class="col-2 col-sm-2">
+                    <div class="quantity">
+                        <div class="minus" onclick="decreaseCount(event, this)">-</div>
+                        <input type="none" step="1" min="1" max="" name="quantity" value="1" title="Quantity" class="input-text" pattern="" inputmode="">
+                        <div class="pluss" onclick="increaseCount(event, this)">+</div>
+                    </div>
+                  </div>
+                  <div class="col-2 col-sm-2">5.53 Eur</div>
+                  <div class="col-2 col-sm-2">5.53 Eur</div>
                   <div class="col-2 col-sm-2">.col-6 .col-sm-3</div>
                   </div>
                 </div>
@@ -193,6 +213,7 @@
 <!--Footer end -->
 <!-- Scripts -->
     <script src="/JS/tabs.js"></script>
+    <script src="/JS/quantity.js"></script>
 <!-- Scripts end -->
 </body>
 </html>

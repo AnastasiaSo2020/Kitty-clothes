@@ -50,4 +50,53 @@ img {
   display: inline-block;
 }
 
-.quantity;
+.quantity {
+  display: inline-block;
+}
+
+.quantity .input-text {
+  width: 35px;
+  height: 35px;
+  padding: 0 5px;
+  text-align: center;
+  background-color: transparent;
+  border: 1px solid #efefef;
+}
+
+.quantity {
+  text-align: center;
+  position: relative;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quantity input {
+  display: inline-block;
+  margin: 0;
+  vertical-align: top;
+  box-shadow: none;
+}
+
+.quantity .minus,
+.quantity .pluss {
+  padding: 7px 10px 8px;
+  height: 35px;
+  background-color: var(--base-light);
+  border: 1px solid #efefef;
+  cursor: pointer;
+}
+
+.quantity .minus {
+  border-right: 0;
+}
+
+.quantity .pluss {
+  border-left: 0;
+}
+
+.quantity .minus:hover,
+.quantity .pluss:hover {
+  background: #eeeeee;
+}
