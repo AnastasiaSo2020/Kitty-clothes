@@ -33,3 +33,20 @@ h5 {
 .imageClass {
     padding: 20px;
 }
+
+.priceAndButtonBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: var(--primary-blue); 
+    padding-top: 50px;
+}
+
+button:hover {
+    background-color: var(--primary-blue); 
+    color: white !important; 
+} 
+
+.btn {
+    border: 1px solid var(--primary-blue) !important;
+}
