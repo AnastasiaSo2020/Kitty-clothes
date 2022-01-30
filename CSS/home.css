@@ -1,0 +1,55 @@
+@import url(main.css);
+.navbar-brand {
+  content: auto;
+}
+.navbar {
+  font-weight: bold;
+  font-size: 30px;
+  background: linear-gradient(to top, #ffff 0%, #318fb5 5%, #005086 95%);
+}
+.nav-link {
+  color: #001244 !important;
+}
+.nav-link:hover {
+  color: #f7d6bf !important;
+  text-decoration: none;
+}
+button {
+  background-color: var(--primary-blue);
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0.8rem 1rem;
+  transition: 0.3s;
+  font-size: 1rem;
+  color: var(--base-light);
+}
+footer {
+  color: #001244;
+  min-height: 5vh;
+  background-color: #318fb5;
+  text-align: center;
+  position: relative;
+}
+.image-responsive {
+  height: auto;
+  width: auto;
+  max-height: 250px;
+  max-width: 650px;
+}
+.nav menu {
+  content: justify, left;
+}
+h2 {
+  color: #001244;
+  text-align: left;
+  margin-left: 2cm;
+}
+.d-block {
+  height: 60vh;
+}
+.img-fluid {
+  max-height: 250px;
+  max-width: 250px;
+}
