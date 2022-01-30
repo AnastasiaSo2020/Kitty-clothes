@@ -1,0 +1,42 @@
+@import url(main.css);
+
+.tab {
+  overflow: hidden;
+  border: var(--border);
+  background-color: var(--primary-blue);
+}
+
+.tab button {
+  background-color: var(--primary-blue);
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0.8rem 1rem;
+  transition: 0.3s;
+  font-size: 1rem;
+  color: var(--base-light);
+}
+
+.tab button:hover {
+  background-color: var(--primary-blue-dark);
+  border: none;
+}
+
+button:focus {
+  background-color: var(--primary-blue-light);
+  border: none;
+}
+
+.tabcontent {
+  display: none;
+}
+
+img {
+  height: 80px;
+  width: auto;
+}
+
+.row {
+  padding: 1rem;
+}
