@@ -53,3 +53,25 @@ h2 {
   max-height: 250px;
   max-width: 250px;
 }
+.imgArt {
+  height: 300px;
+  width: 300px;
+}
+
+.flexcolumn {
+  display: flex;
+  flex-direction: row;
+}
+.article-text {
+  text-align: justify;
+}
+.card-text {
+  color: #001244;
+  font-size: 28pt;
+  text-align: center;
+}
+.card-title {
+  color: #001244;
+  font-size: 14pt;
+  text-align: center;
+}
