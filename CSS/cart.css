@@ -32,7 +32,7 @@ button:focus {
   display: none;
 }
 
-img {
+.tabcontent img {
   height: 80px;
   width: auto;
 }

@@ -11,62 +11,70 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <link rel="icon" type="image/x-icon" href="\IMG\Logo-transparent-darkblue-copy.png">
+    
+        <link rel="icon" type="image/x-icon" href="\IMG\Logo-transparent-darkblue-copy.png">
+    <link rel="stylesheet" type="text/css" href="/CSS/cart.css"> 
     <link rel="stylesheet" href="./css/home.css">
+   
+
+    <!-- Font Awesome-->
+    <script src="https://kit.fontawesome.com/21fc00ac6f.js" crossorigin="anonymous"></script>
+
+
 </head>
 <body>
-    <div class="container-fluid">
-        <header>
-            <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid">
-                    <div class="container">
-                        <a class="navbar-brand">
-                            <img src="\IMG\Logo-transparent-white-copy.png" alt="logo kitty" width="140" height="120">
-                        </a>
-                    </div>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="/categories.html" id="navbarDropdown"
-                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Categories
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="/categories1.html">Women</a></li>
-                                    <li><a class="dropdown-item" href="/categories2.html">Men</a></li>
-                                    <li><a class="dropdown-item" href="/categories3.html">Kids</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="/categories.html">All Categories</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/cart.html">Cart</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </header>
-    </div>
+    <!-- Header start -->
+<header >
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+        <!-- Returning to home page clickable image logo -->
+        <a class="navbar-brand" href="index.html">
+          <img src="/IMG/Untitled design.png">
+        </a>
+           
+        <button class="navbar-toggler" type="button" 
+                    data-toggle="collapse"
+                    data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false" 
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+              <ul class="nav navbar-nav ml-auto navbar-center">
+                <li class="nav-item">
+                  <a class="nav-link" href="/index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <button class="dropbtn">
+                  <a class="nav-link" href="/categories.html"  aria-haspopup="true" aria-expanded="false">
+                    <b>Categories</b>
+                  </a></button>
+                  <div class="dropdown-content" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="categories1.html">Women</a>
+                    <a class="dropdown-item" href="categories2.html">Men</a>
+                    <a class="dropdown-item" href="categories3.html">Kids</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="cart.html">Cart</a>
+                </li>
+              </ul>
+            </div></div>
+          </nav>
+          </header>
+<!-- Header end-->
     <main>
         <!-- Breadcrumps -->
-        <div class="container-fluid">
+        <div class="container pt-2">
             <p class="subsequence">
                 <span><a href=\index.html>Home</a> > </span>
                 <span><a href=\categories.html>Categories</a> > </span>
                 <span id="lastSubsequenceColor">Women</span>
             </p>
        </div>
+<div class="container-fluid">
        <!-- Main category description -->
        <h2>Women</h2> <br>
         <div class="row flexcolumn">
@@ -90,113 +98,153 @@
             </div>
         </div> <br>
 <!--Card products -->
-<div class="container-fluid">
+
 <div class="row">
     <div class="col">
         <div class="card h-100">
+            <a href="/products-women.html">
             <img src="\IMG\cat-women-1.jpeg" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Music cat T-shirt</h5>
-                <p class="card-text">€ 25,00</p>
+                <p class="card-text">€ 25,00</p></a>
             </div>
         </div>
     </div>
     <div class="col">
         <div class="card h-100">
+            <a href="/products-women.html">
             <img src="\IMG\t-shirt(women).jpg" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Kitty cat T-shirt</h5>
-                <p class="card-text">€ 25,00</p>
+                <p class="card-text">€ 25,00</p></a>
             </div>
         </div>
     </div>
     <div class="col">
         <div class="card h-100">
+            <a href="/products-women.html">
             <img src="\IMG\cat-women-3.jpeg" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">I love math cat T-shirt</h5>
-                <p class="card-text">€ 25,00</p>
+                <p class="card-text">€ 25,00</p></a>
             </div>
         </div>
     </div>
     <div class="col">
         <div class="card h-100">
+            <a href="/products-women.html">
             <img src="\IMG\cat-women-4.jpeg" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Blue eyed cat T-shirt</h5>
-                <p class="card-text">€ 25,00</p>
+                <p class="card-text">€ 25,00</p></a>
             </div>
         </div>
     </div>
 
 <div class="col">
     <div class="card h-100">
+        <a href="/products-women.html">
         <img src="\IMG\cat-women-8.jpeg" class="card-img-top" alt="...">
         <div class="card-body">
             <h5 class="card-title">Winter cat T-shirt</h5>
-            <p class="card-text">€ 25,00</p>
+            <p class="card-text">€ 25,00</p></a>
         </div>
     </div>
 </div>
 </div><br>
 <div class="row">
 <div class="col">
-    <div class="card h-100">
+    <div class="card h-100"><a href="/products-women.html">
         <img src="\IMG\cat-women-9.jpeg" class="card-img-top" alt="...">
         <div class="card-body">
             <h5 class="card-title">Black cat T-shirt</h5>
-            <p class="card-text">€ 25,00</p>
+            <p class="card-text">€ 25,00</p></a>
         </div>
     </div>
 </div>
 <div class="col">
-    <div class="card h-100">
+    <div class="card h-100"><a href="/products-women.html">
         <img src="\IMG\cat-women-10.jpeg" class="card-img-top" alt="...">
         <div class="card-body">
             <h5 class="card-title">Fluff off cat T-shirt</h5>
-            <p class="card-text">€ 25,00</p>
+            <p class="card-text">€ 25,00</p></a>
         </div>
     </div>
 </div>
 <div class="col">
-    <div class="card h-100">
+    <div class="card h-100"><a href="/products-women.html">
         <img src="\IMG\cat-women-11.jpeg" class="card-img-top" alt="...">
         <div class="card-body">
             <h5 class="card-title">Cowboy cat T-shirt</h5>
-            <p class="card-text">€ 25,00</p>
+            <p class="card-text">€ 25,00</p></a>
         </div>
     </div>
 </div>
 <div class="col">
-    <div class="card h-100">
+    <div class="card h-100"><a href="/products-women.html">
         <img src="\IMG\cat-women-12.jpeg" class="card-img-top" alt="...">
         <div class="card-body">
             <h5 class="card-title">Kitten cat T-shirt</h5>
-            <p class="card-text">€ 25,00</p>
+            <p class="card-text">€ 25,00</p></a>
         </div>
     </div>
 </div>
 <div class="col">
-    <div class="card h-100">
+    <div class="card h-100"><a href="/products-women.html">
         <img src="\IMG\cat-women-13.jpeg" class="card-img-top" alt="...">
         <div class="card-body">
             <h5 class="card-title">Triangle cat T-shirt</h5>
-            <p class="card-text">€ 25,00</p>
+            <p class="card-text">€ 25,00</p></a>
         </div>
     </div>
 </div>
 </div>
     </main>
     <br>
-    <footer>
-        <div class="row" style="font-family: monospace;">
-            <p> <strong> Kitty Clothes </strong> © All rights reserved by Ieva Anastija Arnita ☎ +37126208098
-                <a href="https://www.instagram.com/arnita_zarina/?hl=en" target="_blank"><i class="fa fa-instagram"
-                        style="font-size:24px; color: plum;"></i></a>
-            </p>
-        </div>
-        </div>
-    </footer>
+<!-- Footer start -->
+<footer class="page-footer text-center" >
+    <div class=" col-md-12 col-12">
+        <ul class="social">
+            <li>
+                <a href="#">
+                    <span class="fa-stack">
+                        <i class="fas icon-fa fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-facebook-f fa-stack-1x"></i>
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class=" fa-stack">
+                        <i class="fas icon-ig fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-instagram fa-stack-1x"></i>
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="fa-stack">
+                        <i class="fas icon-tw  fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-twitter fa-stack-1x"></i>
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="fa-stack">
+                        <i class="fas icon-yt fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-youtube fa-stack-1x"></i>
+                    </span>
+                </a>
+            </li>
+        </ul>     
+<div>
+<div class="footer-copyright text-cente text-dark py-3">© 2022 Copyright
+  <a href="index.html" class="text-dark"> <b>Kitty Clothes</b></a> || created by Ieva, Anastasija, Arnita
+</div>
+</div>
+</footer>
+<!--Footer end -->
     </div>
     </div>
     </div>

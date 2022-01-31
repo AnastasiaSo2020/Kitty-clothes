@@ -8,7 +8,8 @@
   color: var(--base-light);
   font-size: 25px;
 }
-.nav-link:hover {
+.nav-link:hover,
+.card-link:hover {
   color: #f7d6bf !important;
   text-decoration: none;
 }
