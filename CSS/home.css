@@ -1,19 +1,24 @@
 @import url(main.css);
-.navbar-brand {
-  content: auto;
-}
+
 .navbar {
   font-weight: bold;
-  font-size: 30px;
-  background: linear-gradient(to top, #ffff 0%, #318fb5 5%, #005086 95%);
+  background-color: var(--primary-blue-dark);
 }
 .nav-link {
-  color: #001244 !important;
+  color: var(--base-light);
+  font-size: 25px;
 }
 .nav-link:hover {
   color: #f7d6bf !important;
   text-decoration: none;
 }
+
+.navbar img {
+  size: auto;
+  margin: 0;
+  padding: 0;
+}
+
 button {
   background-color: var(--primary-blue);
   float: left;
