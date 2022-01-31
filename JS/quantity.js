@@ -15,3 +15,16 @@ function decreaseCount(e, el) {
         input.value = value;
     }
 }
+
+
+const price = 5;
+
+const totalDiv = document.getElementById("total");
+totalDiv.innerHTML = '<p> 5 Eur </p>';
+
+function totalPrice() {
+    const qvt = document.getElementById('quantity').value;
+    const total = parseInt(qvt)*price;
+
+    totalDiv.innerHTML = total;
+}

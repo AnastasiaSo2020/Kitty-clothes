@@ -37,7 +37,7 @@
             <div class="collapse navbar-collapse " id="navbarSupportedContent">
               <ul class="nav navbar-nav ml-auto navbar-center">
                 <li class="nav-item">
-                  <a class="nav-link" href="index.html">Home</a>
+                  <a class="nav-link" href="/index.html">Home</a>
                 </li>
                 <li class="nav-item dropdown">
                   <button class="dropbtn">
@@ -58,6 +58,14 @@
           </nav>
           </header>
 <!-- Header end-->
+<div class="container pt-3">
+  <p class="subsequence">
+      <span><a href="index.html">Home</a> > </span>
+      <span><a href="categories.html">Categories</a> > </span>
+      <span><a href="products-kids.html">Product</a> > </span>
+      <span id="lastSubsequenceColor">Shopping Cart</span>
+  </p>
+</div>
     <div class="container" style="padding-bottom: 3rem;">
     <h1> Shopping cart</h1>
     <div>
@@ -83,12 +91,12 @@
                   <div class="col-2 col-sm-2">
                       <div class="quantity">
                           <div class="minus" onclick="decreaseCount(event, this)">-</div>
-                          <input type="none" step="1" min="1" max="" name="quantity" value="1" title="Quantity" class="input-text" pattern="" inputmode="">
+                          <input type="text" id="quantity" onchange="totalPrice()" step="1" min="1" max="" name="quantity" value="1" title="Quantity" class="input-text" pattern="" inputmode="">
                           <div class="pluss" onclick="increaseCount(event, this)">+</div>
                       </div>
                   </div>
-                  <div class="col-2 col-sm-2">5.53 Eur</div>
-                  <div class="col-2 col-sm-2">5.53 Eur</div>
+                  <div class="col-2 col-sm-2" id="price">5</div>
+                  <div class="col-2 col-sm-2" id="total"> </div>
                   <div class="col-2 col-sm-2">
                     <button type="button" class="btn" onclick="remove()">Remove</button>
                   </div>
@@ -150,9 +158,10 @@
                 </div>
               </div>
         </div>
-        <div id="address" class="tabcontent">
+        <div id="address" class="tabcontent" style="border-color: aliceblue;"> 
             <!-- Flexbox -->
-                     <div class="row">
+            <div class="container"> 
+                     <div class="row noborder">
             <div class="col-6"> 
             <form id="formSubmission" action="#" method="get">
   
@@ -186,7 +195,7 @@
               <tr>
                 <td>Country</td>
                 <td>
-                  <select id="country" name="country" autocomplete="country" enterkeyhint="done" required>
+                  <select id="country" name="country" autocomplete="country" class="field" enterkeyhint="done" required>
                     <option selected value="SPACER"> </option>
                     <option value="AF">Afghanistan</option>
                     <option value="AX">Åland Islands</option>
@@ -443,7 +452,7 @@
               <tr>
                 <td>Postcode</td>
                 <td>
-                  <input type="text" class="field" id="shipping-postcode">
+                  <input type="text" class="field" id="shippingPostcode">
                 </td>
               </tr>
             </table>
@@ -460,31 +469,31 @@
               <tr>
                 <td class="label">Address Line 1</td>
                 <td>
-                  <input type="text" class="field" id="billing-address1" placeholder="Start typing an address.." auto-complete>
+                  <input type="text" class="field" id="billingAddress1" placeholder="Start typing an address.." auto-complete>
                 </td>
               </tr>
               <tr>
                 <td>Address Line 2</td>
                 <td>
-                  <input type="text" class="field" id="billing-address2">
+                  <input type="text" class="field" id="billingAddress2">
                 </td>
               </tr>
               <tr>
                 <td>Suburb</td>
                 <td>
-                  <input type="text" class="field" id="billing-suburb">
+                  <input type="text" class="field" id="billingSuburb">
                 </td>
               </tr>
               <tr>
                 <td>City</td>
                 <td>
-                  <input type="text" class="field" id="billing-city">
+                  <input type="text" class="field" id="billingCity">
                 </td>
               </tr>
               <tr>
                 <td>Country</td>
                 <td>
-                  <select id="country" name="country" autocomplete="country" enterkeyhint="done" required>
+                  <select id="billingCountry" name="country" autocomplete="country" class="field" enterkeyhint="done" required>
                   <option selected value="SPACER"> </option>
                   <option value="AF">Afghanistan</option>
                   <option value="AX">Åland Islands</option>
@@ -741,78 +750,88 @@
               <tr>
                 <td>Postcode</td>
                 <td>
-                  <input type="text" class="field" id="billing-postcode">
+                  <input type="text" class="field" id="billingPostcode">
                 </td>
               </tr>
             </table>
-            
-          <div class="row">
+             <div class="row">
             <div class="col">
-               <button type="submit">Submit</button>
+               <button type="submit" class="btn">Submit</button>
             </div>
           </div>
+
           </form>
+                   
           </div>
           </div>
-        </div>
+        </div></div>
         <div id="checkout" class="tabcontent">
             <div class="container">
                 <div class="row">
                   <div class="col-4 col-sm-4 datatable">
+                    <h4>Shipping address:</h4>
                     <ul id="data">
-                      <li>shippingAddress1</li>
-                      <li>shippingAddress2</li>
-                      <li>shippingSuburb</li>
-                      <li>shippingCity</li>
+                      
                     </ul>
-                  </div>
+                    
+                      <h4>Billing address:</h4>
+                      <ul id="dataBill">
+                        
+                      </ul>
+                    </div>
+                 
+<div class="col-8 ">
+  <div class="container">
+  <div class="row noborder">
+    <div class="row text-center table-header">
+                  <div class="col-8 col-sm-8">Product</div>
+                  <div class="col-4 col-sm-4">Total</div>
+              </div>
+                  <!-- Force next columns to break to new line -->
+                  <div class="row text-center" >
+              
+                    <div class="col-4 col-sm-4"><img src="/IMG/cat-women-1.jpeg" alt="..."></div>
+                    <div class="col-4 col-sm-4">T-shirt</div>
+                  <div class="col-4 col-sm-4">5 Eur</div></div>
+                  <!-- Force next columns to break to new line -->
+                  <div class="row text-center">
+                  <div class="col-4 col-sm-4"><img src="/IMG/cat-women-2.jpg" alt="..."></div>
+                  <div class="col-4 col-sm-4">Cat t-shirt</div>
+                  <div class="col-4 col-sm-4">5.53 Eur</div></div>
+
+                  <!-- Force next columns to break to new line -->
+                  <div class="row text-center">
+              
+                  <div class="col-4 col-sm-4"><img src="/IMG/t-shirt(men).jpg" alt="..."></div>
+                  <div class="col-4 col-sm-4">Two cat t-shirt</div>
+                  <div class="col-4 col-sm-4">5.53 Eur</div></div>
+
+                  <!-- Force next columns to break to new line -->
+                  <div class="row text-center">
+              
+                  <div class="col-4 col-sm-4"><img src="/IMG/cat-women-5.jpg" alt="..."></div>
+                  <div class="col-4 col-sm-4">Yellow cat</div>
+                  <div class="col-4 col-sm-4">5.53 Eur</div></div>
                   
-                  <div class="col-2 col-sm-2">.col-6 .col-sm-1</div>
-                  <div class="col-2 col-sm-2">.col-6 .col-sm-1</div>
-                  <div class="col-2 col-sm-2">.col-6 .col-sm-1</div>
-                  <div class="col-2 col-sm-2">.col-6 .col-sm-1</div>
-              
-                  <!-- Force next columns to break to new line -->
-                  <div class="w-100"></div>
-              
-                  <div class="col-2 col-sm-2">.col-6 .col-sm-1</div>
-                  <div class="col-2 col-sm-2">.col-6 .col-sm-1</div>
-                  <div class="col-2 col-sm-2">.col-6 .col-sm-1</div>
-                  <div class="col-2 col-sm-2">.col-6 .col-sm-1</div>
-                  <div class="col-2 col-sm-2">.col-6 .col-sm-1</div>
-                  <div class="col-2 col-sm-2">.col-6 .col-sm-</div>
-                  <!-- Force next columns to break to new line -->
-                  <div class="w-100"></div>
-              
-                  <div class="col-2 col-sm-2">.col-6 .col-sm-3</div>
-                  <div class="col-2 col-sm-2">.col-6 .col-sm-3</div>
-                  <div class="col-2 col-sm-2">.col-6 .col-sm-3</div>
-                  <div class="col-2 col-sm-2">.col-6 .col-sm-3</div>
-                  <div class="col-2 col-sm-2">.col-6 .col-sm-3</div>
-                  <div class="col-2 col-sm-2">.col-6 .col-sm-3</div>
-                  <!-- Force next columns to break to new line -->
-                  <div class="w-100"></div>
-              
-                  <div class="col-2 col-sm-2">.col-6 .col-sm-3</div>
-                  <div class="col-2 col-sm-2">.col-6 .col-sm-3</div>
-                  <div class="col-2 col-sm-2">.col-6 .col-sm-3</div>
-                  <div class="col-2 col-sm-2">.col-6 .col-sm-3</div>
-                  <div class="col-2 col-sm-2">.col-6 .col-sm-3</div>
-                  <div class="col-2 col-sm-2">.col-6 .col-sm-3</div>
-                  <!-- Force next columns to break to new line -->
-                  <div class="w-100"></div>
-              
-                  <div class="col-2 col-sm-2">.col-6 .col-sm-3</div>
-                  <div class="col-2 col-sm-2">.col-6 .col-sm-3</div>
-                  <div class="col-2 col-sm-2">.col-6 .col-sm-3</div>
-                  <div class="col-2 col-sm-2">.col-6 .col-sm-3</div>
-                  <div class="col-2 col-sm-2">.col-6 .col-sm-3</div>
-                  <div class="col-2 col-sm-2">.col-6 .col-sm-3</div>
+                  <div class="row ">
+                    <div class="col-8"></div>
+                    <div class="col-4 text-center">
+                      <h6>Total: 60Eur</h6>
+                    </div>
+                  </div>
                 </div>
               </div>
+              
+              </div>
+              <div class="row noborder">
+              <div class="col-12 text-center">
+                <button type="submit" class="btn">Pay for the order</button>
+      </div></div>
         </div>
+      
     </div>
-
+  </div>
+</div>
     <div>
 
     </div></div>

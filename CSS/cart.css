@@ -37,9 +37,14 @@ img {
   width: auto;
 }
 
-.row {
+#products .row,
+#checkout .row {
   padding: 1rem;
   border: var(--border);
+}
+
+.row .noborder {
+  border: #fff !important;
 }
 
 .table-header {
@@ -214,4 +219,19 @@ ul.social li {
   right: 0;
   margin-right: 0;
   padding-right: 2rem;
+}
+
+.datatable ul {
+  list-style: none;
+  display: flexbox;
+  justify-content: center;
+}
+
+.datatable ul li {
+  flex-direction: column;
+  padding: 0.5em 1em 0.5em 1em;
+}
+
+.field {
+  width: 250px;
 }
